@@ -19,4 +19,8 @@ public class ApplicationController {
     public String address(){
         return "Marunji";
     }
+    @GetMapping("/name")
+    public String name(){
+        return "pooja";
+    }
 }
