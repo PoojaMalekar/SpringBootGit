@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api")
 public class ApplicationController {
     @GetMapping
     public String satHello(){
@@ -14,5 +14,9 @@ public class ApplicationController {
     @GetMapping("/services")
     public String services(){
         return "SOFTWARE DEVLOPMENT";
+    }
+    @GetMapping("/address")
+    public String address(){
+        return "Marunji";
     }
 }
